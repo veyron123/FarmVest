@@ -1,3 +1,72 @@
 //====================================================================================================
 
+.page {
+
+    &__intro {
+        padding: rem(250) rem(0) rem(209) rem(0);
+        @include adaptiveValue("padding-top",250 ,150 );
+        @include adaptiveValue("padding-top",250 ,150 );
+    }
+}
+.intro {
+
+    &__container {
+    }
+
+    &__body {
+        max-width: 923px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 10;
+        max-width: 822px;
+        font-weight: 600;
+        text-align: center;
+        // margin-bottom: 69px;
+        margin: 0 auto 69px;
+        // line-height: math.div(78 ,70 );
+        font-size: rem(70);
+        @include adaptiveValue ("font-size",70,40);
+        @include adaptiveValue("margin-bottom", 69 , 35 );
+        span {
+            color:$secondBackgroundColor;
+        }
+    }
+
+    &__text {
+        max-width: rem(580);
+        text-align: center;
+        margin: 0 auto 48px;
+        line-height: 180%;
+        @include adaptiveValue("margin-bottom", 48 , 25 );
+    }
+
+    &__form {
+        
+    }
+
+    &__icons {
+    }
+}
+.title {
+}
+.text {
+}
+.form {
+    
+}
+.from {
+
+    &__input {
+        
+    }
+}
+.button {
+}
+
+
+
+
 //====================================================================================================

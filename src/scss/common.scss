@@ -1,1 +1,18 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+.title{
+    font-weight: 700;
+    font-size: rem(70);
+    line-height: math.div(70 ,78 );
+    font-family: $fontFamily;
+}
+
+.title span{
+    color:$secondBackgroundColor;
+}
+
+.text{
+    font-weight: 400;
+    line-height: 180%;
+
+}
