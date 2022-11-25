@@ -1,10 +1,27 @@
 // Заголовки, общие БЄМ блоки и проче...
 
+.title-block {
+    &__title{
+        margin-bottom: rem(32);
+    }
+}
+
 .title{
     font-weight: 700;
-    font-size: rem(70);
+    // font-size: rem(70);
     line-height: math.div(70 ,78 );
     font-family: $fontFamily;
+    @include adaptiveValue("font-size", 70, 40 );
+
+    &_s64{
+        
+        @include adaptiveValue("font-size", 64,32 );
+    }
+
+    &_s56{
+        
+        @include adaptiveValue("font-size", 56,28 );
+    }
 }
 
 .title span{
@@ -12,7 +29,52 @@
 }
 
 .text{
-    font-weight: 400;
+
     line-height: 180%;
 
+}
+
+.title-block:not(:last-child){
+    @include adaptiveValue("margin-bottom", 48 , 25 );
+}
+
+.media{
+
+    background: rgba(0, 128, 0, 0.05);
+            border-radius: 20px;
+            position: relative;
+            // overflow: hidden;
+            @media (max-width:$tablet){
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            &::after,
+		    &::before{
+			content: "";
+			pointer-events: none;
+			position: absolute;
+            
+
+			top: 0;
+			right: 0;
+			border-radius: 50%;
+			border: 1px solid #008000;
+			
+			@include adaptiveValue("width", 585,293 );
+			@include adaptiveValue("height", 585, 293);
+			@media (max-width: em(767)){
+				opacity: 0.4;
+			}
+        }
+&__image {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+   
+
+    img {
+        width: 100%;
+        
+    }         
+}
 }

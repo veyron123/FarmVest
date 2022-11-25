@@ -2,61 +2,65 @@
 // Снипет (HTML):
 .form {
 
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	max-width: rem(533);
- 	background: rgba(38, 50, 56, 0.1);;
-	 border-radius: 10px;
-	 margin: 0 auto;
-	 gap:rem(6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: rem(400);
+    background: rgba(38, 50, 56, 0.1);
+    border-radius: 10px;
+    margin: 0 auto;
+    gap: rem(6);
 
 
-	 padding: rem(6) rem(6) rem(6) rem(6);
+    padding: rem(6) rem(6) rem(6) rem(6);
 
 
-	 @media (max-width: 399px){
-		  padding-left: rem(6);
-	 }
-	
-	&__row {
-	}
-	&__column {
-	}
-	&__line {
-	}
-	&__input {
-		background-color: transparent;
-		min-height: 68px;
-		justify-content: flex-start;
-		flex:1 1 auto;
-		padding: 0 1.25rem;
+    @media (max-width: 399px) {
+        padding-left: rem(6);
+    }
 
-		@media (max-width: 430px){
-			flex:1 1 auto;
-	  }
-	
-		&::placeholder{
-			
-			font-weight: 500;
-		}
-	
-	}
-	&__button {
-		display: flex;
-		justify-content: center;
-		@media (max-width: 430px){
-			  flex:1 1 auto;
-		}
-		
-	}
-	
+    &__row {}
+
+    &__column {}
+
+    &__line {}
+
+    &__input {
+        background-color: transparent;
+        min-height: 68px;
+        justify-content: flex-start;
+        flex: 1 1 auto;
+        padding: 0 1.25rem;
+
+        @media (max-width: 430px) {
+            flex: 1 1 auto;
+        }
+
+        &::placeholder {
+
+            font-weight: 500;
+        }
+
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 430px) {
+            flex: 1 1 auto;
+        }
+
+    }
+
 }
+
 //</FORM>
 
 // <BUTTONS>
 // Снипет (HTML): btn
- @import "button";
+@import "button";
 
 // <INPUTS>
 // Снипет (HTML): inp
