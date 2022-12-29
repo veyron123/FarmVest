@@ -13,6 +13,9 @@
 	white-space: nowrap;
 	border-radius: rem(10);
 	transition: all 0.2s ease 0s;
+	&:hover{
+		background-color: rgb(0, 102, 0);
+	}
 	.menu-open & {
 		@media (max-width:$mobile){
 			color:$whiteColor;
@@ -50,7 +53,7 @@
 							@media (max-width:$tablet){
 								// background-color: $whiteColor;
 								border: 1px solid $secondBackgroundColor;
-								color:$secondBackgroundColor;
+								color:$whiteColor;
 								
 					}
 						
