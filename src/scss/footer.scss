@@ -1,3 +1,221 @@
 //====================================================================================================
+.footer {
+    background: rgba(242, 248, 242, 0.5);
+    &__container {
+        
+        
+    }
 
+    &__top {
+        @include adaptiveValue("padding-top",68 ,34);
+        @include adaptiveValue("padding-bottom",100 ,50);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: rem(50);
+        @media (max-width: em(504)){
+            flex-direction: column;
+      }
+      @media (max-width:$mobileSmall){
+         align-items: flex-end; 
+      }
+      @media (max-width: em(505)){
+            align-items: center;
+            
+      }
+    }
+
+    &__bottom {
+        @include adaptiveValue("padding-top",56 ,28);
+        @include adaptiveValue("padding-bottom",56 ,28);
+        font-size: rem(14);
+        line-height: math.div(14 ,16 );
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:$mobileSmall){
+            flex-direction: column-reverse;
+            gap: rem(25);
+            align-items: flex-end;
+        }
+    }
+}
+.top-footer {
+
+    &__info {
+        max-width: rem(352);
+       @media (max-width:$mobile){
+          display: none;
+       }
+    }
+
+    &__logo {
+        font-weight: 500;
+        font-size: rem(22);
+        line-height: math.div(22 ,25 );
+    }
+
+    &__logo:not(:last-child) {
+        margin-bottom: rem(24);
+    }
+
+    &__description {
+    }
+
+    &__subscribe {
+        max-width: rem(533);
+    }
+
+    &__subsribe-text{
+        max-width: rem(438);
+    }
+    &__subsribe-text:not(:last-child) {
+        margin-bottom: rem(24);
+    }
+
+    &__form {
+        max-width: 100%;
+        margin: 0;
+        
+    }
+
+    &__contacts {
+        max-width: 100%;
+        display: flex;
+        
+        justify-content: space-between;
+        
+        gap: rem(48);
+
+        
+
+        @media (max-width:$tablet){
+            flex-direction: column;
+        }
+
+        @media (max-width: em(505)){
+            flex-direction: row;
+             flex-wrap: wrap;
+
+      }
+
+      
+        
+
+    
+}
+.form {
+
+    &__input {
+    }
+
+    &__button {
+        @media (max-width: em(1228)){
+         width: 100%;     
+        }
+    }
+}
+.button {
+}
+.contacts {
+
+    &__follow-us {
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(16);
+        line-height: math.div(16 ,18 );
+        margin-bottom: rem(24);
+    }
+
+    &__icons {
+        display: flex;
+        gap: rem(16);        
+    }
+
+    &__icon {
+        width: rem(48);
+        height: 48px;
+        background-color: $secondBackgroundColor;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.1s ease 0s;
+        &:hover{
+            background-color: transparent;
+            cursor: pointer;
+            path {
+                fill:$secondBackgroundColor;
+            } 
+        }
+    }
+    
+
+    &__call-us {
+    }
+}
+.call-us {
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(16);
+        line-height: math.div(16 ,18 );
+        margin-bottom: rem(24);
+    }
+
+    &__phone {
+    }
+}
+}
 //====================================================================================================
+.footer {
+
+    &__bottom {
+    }
+
+    hr{
+        border: 1px solid rgba(38, 50, 56, 0.31);
+    }
+}
+.bottom-footer {
+
+    @media (max-width:$mobile){
+         flex-direction: column-reverse; 
+         gap: rem(20);
+         align-items: center;
+    }
+
+    &__terms {
+        font-weight: 300;
+        font-size: rem(12);
+        line-height: math.div(13 ,12 );;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        @include adaptiveValue("gap",40,15);
+        gap: rem(40);
+        flex-wrap: wrap;
+        
+
+        // @media (max-width:$mobileSmall){
+        //      flex-direction: column; 
+        // }
+        
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(24 ,16 );;
+    }
+    &__item > a{
+        transition: all 0.2s ease 0s;
+        &:hover{
+            color: #008000;
+        }
+    }
+}

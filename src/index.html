@@ -5,41 +5,51 @@
 	})
 	<body>
 		<div class="wrapper">
+			
+			<!-- <div class="wrapper__decor wrapper__decor_2">
+				<img src="@img/Ellipse_2.svg" alt="circle">
+			</div> -->
 			@@include('html/_header.htm',{})
 			<main class="page">
 					<section class="page__intro intro">
 						<div class="intro__container_big">
+							<div class="intro__decor intro__decor_1">
+								<img data-prlx-mouse data-prlx-cx=400 data-prlx-cy="200" data-prlx-dxr src="@img/Ellipse_1.svg" alt="">
+							</div>
+							<div  class="intro__decor intro__decor_2">
+								<img data-prlx-mouse data-prlx-cx=400 data-prlx-cy="200" data-prlx-dxy src="@img/Ellipse_1.svg" alt="">
+							</div>	
 							<div class="intro__body">
 								<h1 class="intro__title title">The easiest and fastest way to <span>Invest</span>  in Agriculture</h1>
 								<p class="intro__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur </p>
 								<div class="intro__form ">
 									<form action="" class="form">
-										<input data-required="email" class="form__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Enter your email" class="input">
+										<input data-required="email"  class="form__input input" autocomplete="off" type="email" name="form[]"  placeholder="Enter your email" >
 										<button class="form__button button" type="submit" class="button">Get Started</button>
 									</form>
-								</div>						
+								</div>																						 
 							</div>
 							<div class="intro__icons icons-intro">
 								<div class="intro-icons__image intro-icons__image_1">
-									<img src="@img/emojione-monotone_money-bag.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="20" data-prlx-dxr alt="icon">
+									<img src="@img/emojione-monotone_money-bag.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="15" data-prlx-dxr alt="icon">
 								</div>
 								<div class="intro-icons__image intro-icons__image_2">
-									<img src="@img/tabler_currency-naira.svg" data-prlx-mouse data-prlx-cx=20 data-prlx-cy="20" data-prlx-dxy alt="icon">
+									<img src="@img/tabler_currency-naira.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="15" data-prlx-dxy alt="icon">
 								</div>
 								<div class="intro-icons__image intro-icons__image_3">
-									<img src="@img/carbon_currency-dollar.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="20" data-prlx-dxr alt="icon">
+									<img src="@img/carbon_currency-dollar.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="15" data-prlx-dxr alt="icon">
 								</div>
 								<div class="intro-icons__image intro-icons__image_4">
-									<img src="@img/Star 5.svg" data-prlx-mouse data-prlx-cx=20 data-prlx-cy="20" data-prlx-dxy alt="icon">
+									<img src="@img/Star 5.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="15" data-prlx-dxy alt="icon">
 								</div>
 								<div class="intro-icons__image intro-icons__image_5">
-									<img src="@img/Star 2.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="20" data-prlx-dxr alt="icon">
+									<img src="@img/Star 2.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="15" data-prlx-dxr alt="icon">
 								</div>
 								<div class="intro-icons__image intro-icons__image_6">
-									<img src="@img/Ellipse 130.svg" data-prlx-mouse data-prlx-cx=20 data-prlx-cy="20" data-prlx-dxy alt="icon">
+									<img src="@img/Ellipse 130.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="15" data-prlx-dxy alt="icon">
 								</div>
 								<div class="intro-icons__image intro-icons__image_7">
-									<img src="@img/Ellipse 129.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="20" data-prlx-dxr alt="icon">
+									<img src="@img/Ellipse 129.svg" data-prlx-mouse data-prlx-cx=15 data-prlx-cy="15" data-prlx-dxr alt="icon">
 								</div>
 							</div>
 						</div>
@@ -119,8 +129,8 @@
 								</div>
 							</div>
 						</div>
-					</section>
-					<section class="page__pathway pathway">
+					</section> 
+					<section id="features" class="page__pathway pathway">
 						<div class="pathway__container">
 							
 								<div data-prlx-parent class="pathway__media media">
@@ -133,31 +143,45 @@
 										<div class="title-block__title title ">Your <span>pathway</span> to Future Investment</div>
 										<div class="title-block__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur </div>
 									</div>
-									<div class="content-pathway__items">
-										<div class="content-pathway__item item-pathway">
-											<div class="item-pathway__text">What is FarmVest?</div>
-											<div class="item-pathway__icon">
-												<img src="@img/arrow-down.svg
-												" alt="">
+									<div data-spollers data-one-spoller class="content-pathway__items">
+										<div  class="content-pathway__spollers  spollers">
+											<div data-spoller data-spoller-close class="content-pathway__item item-pathway">
+												<button  class="item-pathway__text">What is FarmVest?</button>
+												<div class="item-pathway__icon">
+													<img src="@img/arrow-down.svg
+													" alt="">
+												</div>
+												
 											</div>
+											<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vel adipisci laboriosam, aliquid quisquam eveniet eius quasi voluptatum dolorum, harum odit, dicta quaerat! Dolores qui cum sed blanditiis. Facere, culpa!</div>
+										</div>										
+										<div  class="content-pathway__spollers  spollers">
+											<div data-spoller data-spoller-close  class="content-pathway__item item-pathway">
+												<button  class="item-pathway__text">How safe is FarmVest?</button>
+												<div class="item-pathway__icon">
+													<img src="@img/arrow-down.svg
+													" alt="">
+												</div>
+												
+											</div>
+											<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vel adipisci laboriosam, aliquid quisquam eveniet eius quasi voluptatum dolorum, harum odit, dicta quaerat! Dolores qui cum sed blanditiis. Facere, culpa!</div>
 										</div>
-										<div class="content-pathway__item item-pathway">
-											<div class="item-pathway__text">How safe is FarmVest</div>
-											<div class="item-pathway__icon">
-												<img src="@img/arrow-down.svg" alt="">
+										<div  class="content-pathway__spollers  spollers">
+											<div data-spoller data-spoller-close class="content-pathway__item item-pathway">
+												<button  class="item-pathway__text">What do I gain from using FarmVest?</button>
+												<div class="item-pathway__icon">
+													<img src="@img/arrow-down.svg
+													" alt="">
+												</div>
+												
 											</div>
-										</div>
-										<div class="content-pathway__item item-pathway">
-											<div class="item-pathway__text">What do I gain from using FarmVest?</div>
-											<div class="item-pathway__icon">
-												<img src="@img/arrow-down.svg" alt="">
-											</div>
+											<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vel adipisci laboriosam, aliquid quisquam eveniet eius quasi voluptatum dolorum, harum odit, dicta quaerat! Dolores qui cum sed blanditiis. Facere, culpa!</div>
 										</div>
 									</div>
 								</div>
 							
 						</div>
-					</section>
+					</section> 
 					<section class="page__choose choose">
 						<div class="choose__container">
 							<div class="choose__content content-choose">							
@@ -190,7 +214,7 @@
 								<img data-prlx src="@img/coverImg/unsplash_L3W6GiQIRWA.png" alt="">
 							</div>
 						</div>					
-					</section>
+					</section> 
 					<section class="page__customers customers">
 						<div class="customers__container">
 							<div class="customers__title-block title-block">
@@ -220,7 +244,7 @@
 							<button class="customers__button button">View All</button>
 						</div>
 						
-					</section>
+					</section> 
 					<section class="page__apps apps">
 						<div class="apps__container">
 							<div class="apps__title title title_s56">Download <span>FarmVest app</span> 
@@ -238,6 +262,7 @@
 					</section>
 			</main>
 			@@include('html/_footer.htm',{})
+			
 		</div>
 		@@include('html/_popup.htm',{})
 		@@include('html/_js.htm',{})

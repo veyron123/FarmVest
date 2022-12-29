@@ -5,7 +5,7 @@
 	display: inline-flex;
 	padding: rem(21) rem(25) rem(21) rem(25);
 	line-height: math.div(22 , 18);
-justify-content: center;
+	justify-content: center;
 	background-color: $secondBackgroundColor;
 	font-weight: 500;
 	font-size: rem(18);
@@ -14,38 +14,51 @@ justify-content: center;
 	border-radius: rem(10);
 	transition: all 0.2s ease 0s;
 	.menu-open & {
-		color:$whiteColor;
-		background-color: $secondBackgroundColor;
-		border: none;
-	}
-
-
-
-
-
-	@media (any-hover: hover) {
-		&:hover {
-			background-color: #0e680b;
-			// color:$mainColor;
+		@media (max-width:$mobile){
+			color:$whiteColor;
+			background-color: $secondBackgroundColor;
+			border: 1px solid $secondBackgroundColor;
+			&:hover{
+				background-color:rgb(0, 102, 0);
+			}
 		}
+		
+		
 	}
+
+
+
+
+
+	
 	&._fw {
 		width: 100%;
 	}
 	&_border{
-		border: 1px solid #263238;
+			border: 1px solid #263238;
 			border-radius: 10px;
 			padding: rem(20) rem(44);
 			background-color: transparent;
 			color: #263238;
 			@media (any-hover: hover) {
 				&:hover {
-					background-color: #2b353a;
-					border: transparent;
-					color:$whiteColor;
+					background-color: transparent;
+					border-color: $secondBackgroundColor;
+					color:$secondBackgroundColor;
+								
+										
+							@media (max-width:$tablet){
+								// background-color: $whiteColor;
+								border: 1px solid $secondBackgroundColor;
+								color:$secondBackgroundColor;
+								
+					}
+						
 					
 				}
 			}
+			
+			
 	}
 	
 }

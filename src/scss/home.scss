@@ -3,33 +3,30 @@
 .page {
 
     &__intro {
-        padding: rem(250) rem(0) rem(209) rem(0);
-        @include adaptiveValue("padding-top",250 ,150 );
-        @include adaptiveValue("padding-bottom",250 ,150 );
+        
     }
 }
 .intro {
 
     &__container_big {
         position: relative;
+        padding: rem(250) rem(0) rem(209) rem(0);
+        @include adaptiveValue("padding-top",250 ,150 );
+        @include adaptiveValue("padding-bottom",250 ,150 );      
     }
 
     &__body {
         max-width: 923px;
         margin: 0 auto;
+        position: relative;
     }
 
     &__title {
-        position: relative;
-        z-index: 10;
         max-width: rem(800);
-        font-weight: 700;
         text-align: center;
         // margin-bottom: 69px;
         margin: 0 auto 69px;
         // line-height: math.div(78 ,70 );
-        font-size: rem(70);
-        line-height: math.div(70px, 78px);
         @include adaptiveValue ("font-size",70,40);
         @include adaptiveValue("margin-bottom", 69 , 35 );
         span {
@@ -69,38 +66,38 @@
             
 
 			&_1 {
-                top:rem(-59);
-                right: 26%;
+                top:40%;
+                right: 76%;
 			}
 
 			&_2 {
-                top:percent(120,525);
-                right: rem(15);
+                top:76%;
+                right:16%;
 			}
 
 			&_3 {
-               bottom:52px;
-                left: rem(15);
+                top:16%;
+                right: 46%;
 			}
 
 			&_4 {
-                top:138px;
-                left: rem(252);
+                top:66%;
+                right: 86%;
 			}
 
 			&_5 {
-                bottom:rem(-40);
-                right: rem(259);
+                top:46%;
+                right: 06%;;
 			}
 
 			&_6 {
-                bottom:rem(-8);
-                left: rem(403);
+                top:44%;
+                right: 56%;
 			}
 
 			&_7 {
-                top:rem(178);
-                right:rem(279);
+                top:60%;
+                right: 26%;
 			}
 		}
 }
@@ -406,26 +403,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: rem(24) rem(30) rem(24) rem(30);
-        border-radius: 20px;
-        background: rgba(0, 128, 0, 0.05);
+        cursor: pointer;
     }
 }
-.title-block {
 
-    &__title {
-    }
-
-    &__text {
-    }
-}
-.title {
-
-    &_s64 {
-    }
-}
-.text {
-}
 .item-pathway {
 
     &__text {
@@ -440,6 +421,33 @@
         
     }
 }
+
+.content-pathway {
+
+    // .content-pathway__spollers
+
+    &__spollers {
+        padding: rem(24) rem(30) rem(24) rem(30);
+        border-radius: 20px;
+        background: rgba(0, 128, 0, 0.05);
+    }
+
+    // .content-pathway__item
+
+    &__item {
+    }
+}
+.spollers {
+
+    // .spollers__body
+
+    &__body {
+        padding: rem(24) rem(0);
+        border-radius: 10px;
+    }
+}
+
+
 
 //====================================================================================================
 
@@ -551,14 +559,16 @@
 
     &__number {
         min-width: rem(64);
-        height: rem(64);
-        text-align: center;
+        height: rem(64);     
         border-radius: 50%;
-        background-color: $secondBackgroundColor;
-        color: $whiteColor;
+        background-color: rgba(0, 128, 0, 0.1);
+        color: $secondBackgroundColor;
         font-weight: 700;
         font-size: 36px;
-        line-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
 
         
     }
@@ -732,7 +742,7 @@
         margin: 0 auto;
         max-width: rem(760);
         position: relative;
-        z-index: 2;
+        z-index: 1;
         
     }
 
@@ -746,6 +756,33 @@
     &__icon {
     }
 }
+
+.intro {
+
+    // .intro__decor
+
+    &__decor {
+        position: absolute;
+        // z-index: 10;
+        top: 0;
+        left: 0;
+        @media (max-width:$mobile){
+             opacity:0.3; 
+        }
+        // .intro__decor_1
+        &_1 {
+            transform: translate(-45%,-44%);
+        }
+
+        // .intro__decor_2
+
+        &_2 {
+            transform: translate(-58%,-35%);
+        }
+    }
+}
+
+
 
 
 //========================================= FOOTER ===========================================================
